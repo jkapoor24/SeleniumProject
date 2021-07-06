@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="valid"/>
+        <include name="invalid"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.ValidationTest">
+        <methods>
+          <include name="invalidation"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="validate"/>
+          <include name="openBrowser"/>
+          <include name="attachScreenshot"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.ValidationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="invalidUsername"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="validLogin"/>
+          <include name="blankDetails"/>
+          <include name="invalidPassword"/>
+          <include name="openBrowser"/>
+          <include name="attachScreenshot"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RegistrationTest">
+        <methods>
+          <include name="blankEmail"/>
+          <include name="blankRequiredField"/>
+          <include name="validDetails"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="invalidEmail"/>
+          <include name="invalidPin"/>
+          <include name="openBrowser"/>
+          <include name="attachScreenshot"/>
+          <include name="intializeWebdriver"/>
+          <include name="alreadyRegistered"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.RegistrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

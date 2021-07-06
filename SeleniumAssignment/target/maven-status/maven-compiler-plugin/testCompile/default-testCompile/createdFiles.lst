@@ -1,0 +1,7 @@
+tests\ValidationTest.class
+tests\RegistrationTest.class
+utils\TestDataUtil.class
+tests\BaseTest.class
+utils\ScreenShots.class
+tests\LoginTest.class
+com\excel\utility\Xls_Reader.class
